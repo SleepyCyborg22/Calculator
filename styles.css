@@ -1,3 +1,76 @@
+html{
+    background-color: #F3F1F5;
+    color: #3F3C42;
+    font-size: x-large;
+}
+
+#calcu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
 #javcm{
     display: none;
+}
+#inpbu{
+    display: flex;
+   
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+#calcu#inpbu div{
+    width: 37.5%;
+    margin: 0;
+    padding: 0;
+}
+#calcu#opbu{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background-color: #F0D9FF;
+    color: #3F3C42;
+    border: none;
+    border-radius: 2%;
+    padding: 0.5em 1em;
+    font-size: larger;
+    margin: 0.2em 0.3em;
+}
+
+button:hover{
+    background-color: #BFA2DB;
+    color: #F3F1F5;
+}
+
+
+
+#inpbu button{
+    width: calc(85%/3);
+}
+#opbu button{
+    width: calc(85%/2);
+}
+
+
+button#equal{
+    width: 96%;
+    background-color: #FF5677;
+}
+button#equal:hover{
+    background-color: #9145B6;
+}
+
+#dissc{
+    background-color: #7F7C82;
+    width: 89%;
+    text-align: right;
+    color:#F3F1F5;
+    padding: 2em 2em 0.6em;
 }
