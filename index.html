@@ -8,22 +8,25 @@
 <body>
     <div id="javcm"></div>
     <div id="calcu">
-        <div id="dissc">Display</div>
+        <div id="dissc"></div>
 
         <div id="inpbu">
             <div id="mabu">
-                <button>sqrt</button>
-                <button>pi</button>
-                <button>^</button>
-                <button>!</button>
-                <button>sin</button>
-                <button>cos</button>
-                <button>tan</button>
-                <button>e</button>
-                <button>log</button>
-                <button>asin</button>
-                <button>acos</button>
-                <button>atan</button>
+                
+                <button id="pi">pi</button>
+                <button id="e">e</button>
+                <button id="bp">^</button>
+                <button id="fact">fact</button>
+                <div id="mabuo">
+                    <button id="sqrt">sqrt</button>
+                    <button id="log">log</button>
+                    <button id="sin">sin</button>
+                    <button id="cos">cos</button>
+                    <button id="tan">tan</button>
+                    <button id="asin">asin</button>
+                    <button id="acos">acos</button>
+                    <button id="acos">atan</button>
+                </div>
             </div>
             <div id="numpad">
                 <button>7</button>
@@ -42,7 +45,7 @@
             <div id="opbu">
                 <button>(</button>
                 <button>)</button>
-                <button>CE</button>
+                <button id="ce" onclick="clsc()">CE</button>
                 <button>%</button>
                 <button>/</button>
                 <button>*</button>
@@ -52,8 +55,10 @@
             </div>
             
         </div>
-        <button id="equal">=</button>
+        <button id="equal" onclick="abra()">=</button>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
