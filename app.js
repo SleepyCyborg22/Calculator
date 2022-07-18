@@ -3,20 +3,48 @@ function clsc() {
     document.getElementById("javcm").innerText = "";
 }
 
+function fact(x){
+    var ans =  1;
+    for(let i=1;i<=x;i++)ans*=i;
+    return ans;
+}
+
+const fa = document.querySelector("#fact");
+fa.onclick = function(){
+    
+    document.getElementById("dissc").innerText += "fact(";
+    document.getElementById("javcm").innerText += "fact(";
+    
+}
+const pa = document.querySelector("#bp");
+pa.onclick = function(){
+    
+    document.getElementById("dissc").innerText += "pow(";
+    document.getElementById("javcm").innerText += "Math.pow(";
+    
+}
+const ea = document.querySelector("#e");
+ea.onclick = function(){
+    
+    document.getElementById("dissc").innerText += "e";
+    document.getElementById("javcm").innerText += "Math.E";
+    
+}
+const pia = document.querySelector("#pi");
+pia.onclick = function(){
+    
+    document.getElementById("dissc").innerText += "pi";
+    document.getElementById("javcm").innerText += "Math.PI";
+    
+}
+
 const numbu = document.querySelectorAll("#numpad button");
 
 for (let i = 0; i < numbu.length; i++) {
     let it = numbu[i].innerText;
-    if (it != 'Back' && it != 'CE') {
-        numbu[i].onclick = function () {
-            document.getElementById("dissc").innerText += it;
-            document.getElementById("javcm").innerText += it;
-        }
-    }
-    else {
-        numbu[i].onclick = function () {
-
-        }
+    numbu[i].onclick = function () {
+        document.getElementById("dissc").innerText += it;
+        document.getElementById("javcm").innerText += it;
     }
 }
 
@@ -45,10 +73,6 @@ for (let i = 0; i < mabus.length; i++) {
     }
 
 }
-
-
-
-
 
 function abra() {
     var ds = document.getElementById("javcm").innerText;
